@@ -1,0 +1,28 @@
+<h2>Reactive Form con Validator</h2>
+<form>
+  <input [formControl]="nomeControl" placeholder="Nome" />
+  <div *ngIf="nomeControl.invalid && nomeControl.touched">
+    <p *ngIf="nomeControl.errors?.['required']" class="red">
+      il campo nome è obbligatorio
+    </p>
+    <p *ngIf="nomeControl.errors?.['minlength']" class="red">
+      Il campo deve esser di minimo 3 caratteri
+    </p>
+  </div>
+  <p>l'input inserito è {{ nomeControl.value }}</p>
+  <input
+    type="email"
+    [formControl]="emailControl"
+    placeholder="Inserisci email"
+  />
+  <div *ngIf="emailControl.invalid && emailControl.touched">
+    <p *ngIf="emailControl.errors?.['required']">L'email è obbligatoria</p>
+    <p *ngIf="emailControl.errors?.['email']">Formato email non valido</p>
+    <p *ngIf="emailControl.errors?.['gmail']">
+      L'email deve terminare con &#64;gmail.com
+    </p>
+    <p *ngIf="emailControl.errors?.['onlyLetters']">
+      La parte prima di &#64; deve contenere solo lettere
+    </p>
+  </div>
+</form>
