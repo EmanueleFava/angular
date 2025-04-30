@@ -1,0 +1,5 @@
+<div [ngSwitch]="userRole">
+  <p *ngSwitchCase="'admin'">Benvenuto Amministratore</p>
+  <p *ngSwitchCase="'user'">Benvenuto utente</p>
+  <p *ngSwitchDefault>Ruolo non riconosciuto</p>
+</div>
