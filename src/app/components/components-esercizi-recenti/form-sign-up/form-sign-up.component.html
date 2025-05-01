@@ -1,3 +1,4 @@
+<h2>Registrazione</h2>
 <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
   <label>
     Nome:
@@ -46,4 +47,8 @@
 
 <p *ngIf="submitted">
   Registrazione completata per {{ registrationForm.value.nome || "Utente" }}
+</p>
+
+<p>
+  Hai già un account? Vai alla pagina di <a [routerLink]="['/login']">login</a>
 </p>

@@ -1,3 +1,11 @@
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin-top: -50px;
+}
+
 form {
   max-width: 400px;
   margin: 2rem auto;
@@ -63,7 +71,22 @@ button:hover:not(:disabled) {
 
 p {
   text-align: center;
-  font-size: 1rem;
-  color: #28a745;
-  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+p[ng-reflect-ng-if="true"],
+p.error {
+  color: #dc3545;
+  font-weight: bold;
 }
