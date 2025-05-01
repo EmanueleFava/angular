@@ -16,10 +16,15 @@ import { FormValidatorComponent } from './components/components-esercizi/form-va
 import { FormGroupComponent } from './components/components-esercizi/form-group/form-group.component';
 import { FormQueriesComponent } from './components/components-esercizi/form-queries/form-queries.component';
 import { SubmitReciverComponent } from './components/components-esercizi/submit-reciver/submit-reciver.component';
+import { FormSignUpComponent } from './components/components-esercizi/form-sign-up/form-sign-up.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'signup',
+    component: FormSignUpComponent,
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,

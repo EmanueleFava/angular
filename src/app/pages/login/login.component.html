@@ -1,5 +1,4 @@
 <h2>Login</h2>
-<h3>dati: username: admin, password: angular</h3>
 <form (ngSubmit)="onLogin()">
   <input
     [(ngModel)]="username"
@@ -16,4 +15,5 @@
   />
   <button type="submit">Login</button>
 </form>
-<p *ngIf="error">Credenziali non valide</p>
+<p *ngIf="error" class="error">Credenziali non valide</p>
+<p>Non hai un account? <a [routerLink]="['/signup']">Registrati</a></p>

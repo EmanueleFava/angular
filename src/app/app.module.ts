@@ -39,6 +39,7 @@ import { FormValidatorComponent } from './components/components-esercizi/form-va
 import { FormGroupComponent } from './components/components-esercizi/form-group/form-group.component';
 import { FormQueriesComponent } from './components/components-esercizi/form-queries/form-queries.component';
 import { SubmitReciverComponent } from './components/components-esercizi/submit-reciver/submit-reciver.component';
+import { FormSignUpComponent } from './components/components-esercizi/form-sign-up/form-sign-up.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { SubmitReciverComponent } from './components/components-esercizi/submit-
     FormGroupComponent,
     FormQueriesComponent,
     SubmitReciverComponent,
+    FormSignUpComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
