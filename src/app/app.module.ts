@@ -40,6 +40,7 @@ import { FormGroupComponent } from './components/components-esercizi-recenti/for
 import { FormQueriesComponent } from './components/components-esercizi-recenti/form-queries/form-queries.component';
 import { SubmitReciverComponent } from './components/components-esercizi-recenti/submit-reciver/submit-reciver.component';
 import { FormSignUpComponent } from './components/components-esercizi-recenti/form-sign-up/form-sign-up.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { FormSignUpComponent } from './components/components-esercizi-recenti/fo
     FormQueriesComponent,
     SubmitReciverComponent,
     FormSignUpComponent,
+    NavigationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

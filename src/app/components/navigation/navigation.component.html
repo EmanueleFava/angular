@@ -1,0 +1,16 @@
+<nav>
+  <a routerLink="login" *ngIf="!isLoggedIn">Login</a>
+  <a routerLink="signup" *ngIf="!isLoggedIn">Registrati</a>
+  <a routerLink="dashboard" *ngIf="isLoggedIn">Dashboard</a>
+  <a routerLink="esercizio-1" *ngIf="isLoggedIn">Esercizio 1</a>
+  <a routerLink="esercizio-2" *ngIf="isLoggedIn">Esercizio 2</a>
+  <a routerLink="esercizio-3" *ngIf="isLoggedIn">Esercizio 3</a>
+  <a routerLink="esercizio-4" *ngIf="isLoggedIn">Esercizio 4</a>
+  <a routerLink="esercizio-5" *ngIf="isLoggedIn">Esercizio 5</a>
+  <a [routerLink]="['/params', 123]" *ngIf="isLoggedIn">Param Component</a>
+  <a routerLink="query" *ngIf="isLoggedIn">Query Component</a>
+  <a routerLink="form-group" *ngIf="isLoggedIn">Form Group</a>
+  <a routerLink="form-sender" *ngIf="isLoggedIn">Form Sender</a>
+
+  <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+</nav>
