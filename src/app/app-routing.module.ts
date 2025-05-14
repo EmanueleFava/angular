@@ -17,6 +17,11 @@ import { FormGroupComponent } from './components/components-esercizi-recenti/for
 import { FormQueriesComponent } from './components/components-esercizi-recenti/form-queries/form-queries.component';
 import { SubmitReciverComponent } from './components/components-esercizi-recenti/submit-reciver/submit-reciver.component';
 import { FormSignUpComponent } from './components/components-esercizi-recenti/form-sign-up/form-sign-up.component';
+import { ObservableComponent } from './components/components-esercizi-recenti/observable/observable.component';
+import { ObservableCompattoComponent } from './components/components-esercizi-recenti/observable-compatto/observable-compatto.component';
+import { DoubleSubscriptionComponent } from './components/components-esercizi-recenti/double-subscription/double-subscription.component';
+import { ErrorCompleteComponent } from './components/components-esercizi-recenti/error-complete/error-complete.component';
+import { IntervalComponent } from './components/components-esercizi-recenti/interval/interval.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -88,6 +93,31 @@ const routes: Routes = [
   {
     path: 'submit-reciver',
     component: SubmitReciverComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'observer',
+    component: ObservableComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'observer-compatto',
+    component: ObservableCompattoComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'observer-doppio',
+    component: DoubleSubscriptionComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'observer-compelted',
+    component: ErrorCompleteComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'interval',
+    component: IntervalComponent,
     canActivate: [AuthGuard],
   },
 ];

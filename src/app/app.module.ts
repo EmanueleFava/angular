@@ -41,6 +41,11 @@ import { FormQueriesComponent } from './components/components-esercizi-recenti/f
 import { SubmitReciverComponent } from './components/components-esercizi-recenti/submit-reciver/submit-reciver.component';
 import { FormSignUpComponent } from './components/components-esercizi-recenti/form-sign-up/form-sign-up.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { ObservableComponent } from './components/components-esercizi-recenti/observable/observable.component';
+import { ObservableCompattoComponent } from './components/components-esercizi-recenti/observable-compatto/observable-compatto.component';
+import { DoubleSubscriptionComponent } from './components/components-esercizi-recenti/double-subscription/double-subscription.component';
+import { ErrorCompleteComponent } from './components/components-esercizi-recenti/error-complete/error-complete.component';
+import { IntervalComponent } from './components/components-esercizi-recenti/interval/interval.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +87,11 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     SubmitReciverComponent,
     FormSignUpComponent,
     NavigationComponent,
+    ObservableComponent,
+    ObservableCompattoComponent,
+    DoubleSubscriptionComponent,
+    ErrorCompleteComponent,
+    IntervalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

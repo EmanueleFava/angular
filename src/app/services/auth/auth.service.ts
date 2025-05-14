@@ -5,12 +5,9 @@ import { User } from '../../models/User';
 export class AuthService {
   login(username: string, password: string): boolean {
     const users = JSON.parse(localStorage.getItem('signedUsers') ?? '[]');
-    const userFound = users.find((user: User) => {
-      if (user.nome === username && user.password === password) {
-        return true;
-      }
-      return false;
-    });
+    const userFound = users.find(
+      (user: User) => user.nome === username && user.password === password
+    );
     if (userFound) {
       localStorage.setItem('token', 'fake-jwt-token');
       localStorage.setItem('user', JSON.stringify(userFound));

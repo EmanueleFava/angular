@@ -11,6 +11,12 @@
   <a routerLink="query" *ngIf="isLoggedIn">Query Component</a>
   <a routerLink="form-group" *ngIf="isLoggedIn">Form Group</a>
   <a routerLink="form-sender" *ngIf="isLoggedIn">Form Sender</a>
-
+  <a routerLink="observer" *ngIf="isLoggedIn">Observer</a>
+  <a routerLink="observer-compatto" *ngIf="isLoggedIn">Observer-compatto</a>
+  <a routerLink="observer-doppio" *ngIf="isLoggedIn">Observer-doppio</a>
+  <a routerLink="observer-compelted" *ngIf="isLoggedIn"
+    >Observer passaggio interrotto</a
+  >
+  <a routerLink="interval" *ngIf="isLoggedIn">Interval</a>
   <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
 </nav>
